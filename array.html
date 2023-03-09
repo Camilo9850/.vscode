@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+ </head>
+ <body>
+    <script>
+        //1- Metodo estandar el contructor
+        var people = new Array(); 
+
+        people[0] ="Camilo rincon";
+        people[1] ="Alejandro";
+        people[2] ="Messi";
+        people[3] ="Mario";
+        people[4] ="Music";
+
+        // 2- Metodo condesado
+        var food = new Array("Sushi","pizza","Espagueti","Ramen","Ichiraku","oni");
+        // 3 Metodode Array Literal
+        var companies=["Apple","Google","Udemy","Facebook","Unity"];
+
+
+        alert("La tercera persona es :" + people[3]);
+        alert("La tercera Comida es :" + food[3]);
+        alert("La tercera empre es :" + companies[3]);
+
+
+
+        var din = people.length
+        alert("El Array de persona contiene" + din)
+
+
+        for(var i=0 < people.length; i++)
+        {
+            document.write(people[i] + "<br/>");
+        }
+    </script>
+ </body>
+ </html>

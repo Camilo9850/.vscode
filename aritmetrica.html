@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aritmetrica con javascript</title>
+    <script lang="javascript" type="text/javascript">
+        function simpleAritmetics()
+        {
+            var x = parseInt(prompt("Introduce el primer numero a operar"))
+            var y = parseInt(prompt("Introduce el segundo numero a operar"))
+            var op = prompt("Introduce la operacion que quieres hacer +,-,*,/");
+            switch(op)
+            {
+                case "+":
+                    var sun = x+y;
+                    alert("la suma es" + sun);
+                    break;
+
+                    case "-":
+                    var diff = x-y;
+                    alert("la resta es" - diff);
+                    break;
+
+                    case "*":
+                    var prod = x*y;
+                    alert("el producto es" * prod);
+                    break;
+                    case "/":
+                        if(y==0){
+                            alert("No puedes dividir por cero");
+                        }else{
+                            var div = x/y;
+                            alert("La division es " +div);
+                        }
+                    var div = x/y;
+                    alert("la divicion es" / div);
+                    break;
+            }
+        }
+
+
+        function circle(){
+            var r = parseFloat(prompt("Introduce el radio de la circunferencia"));
+            while(isNaN(r)){
+                alert("El valor introducido no es valido");
+            }
+            var pi = Math.PI;
+            var per =2.0 * pi * r;
+            alert("La circunferencia de radio" + r + "tiene perimetro" + per);
+        }
+    </script>
+</head>
+<body>
+    <h1>Aritmetrica elemental con js</h1>
+    <input type="button" value="Aritmetrica con JS" onclick="simpleAritmetics()"/>
+    <input type="button" value="Perimetro de un circunferencia" onclick="circle()"/>
+</body>
+</html>
